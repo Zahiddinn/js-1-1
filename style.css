@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+input {
+  display: block;
+  margin-top: 10px;
+  height: 35px;
+}
+
+.btn {
+  width: 30px;
+  height: 40px;
+  margin-top: 5px;
+
+}
+.btn:hover {
+    background: rgba(red, green, blue, alpha);
+}
+
+.result_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 100px;
+  border: 1px solid silver;
+  border-radius: 3px;
+  box-shadow: 10px 5px 5px black;
+  align-items: center;
+  justify-content: center;
+}
