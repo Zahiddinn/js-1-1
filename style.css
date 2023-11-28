@@ -20,7 +20,7 @@ input {
 }
 
 .btn {
-  width: 30px;
+  min-width: 30px;
   height: 40px;
   margin-top: 5px;
 
@@ -39,4 +39,16 @@ input {
   box-shadow: 10px 5px 5px black;
   align-items: center;
   justify-content: center;
+}
+
+
+
+
+
+
+
+.btnDivider {
+  padding: 0px 10px;
+  font-size: 20px;
+  margin-top: 10px;
 }

@@ -7,25 +7,49 @@
     <title>Document</title>
   </head>
   <body>
-
     <div class="container">
-        
       <div class="wrapper">
         <div>
-          <h4>длина квадрата</h4>
+          <h3>длина квадрата</h3>
           <input type="number" id="square-length" input="Number" />
         </div>
         <div>
-          <h4>ширина квадрата</h4>
+          <h3>ширина квадрата</h3>
           <input type="number" id="square-width" input="Number" />
         </div>
       </div>
 
       <input type="button" value="=" class="btn" />
-      <div class="result_wrapper"> 
+      <div class="result_wrapper">
         <h3 class="result-square"></h3>
         <h3 class="perimeter"></h3>
+      </div>
     </div>
+    <div class="container">
+      <div class="wrapper">
+        <div>
+          <h3>найти делитель числа </h3>
+          <input type="number" id="divider" input="Number" />
+        </div>
+        <input type="button" value="найти" class="btn btnDivider" />
+      </div>
+      <div class="result_wrapper">
+        <h3 class="result-divider"></h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="wrapper">
+        <div>
+          <h3>первое число</h3>
+          <input type="number" id="first-number" input="Number" />
+        </div>
+        <div>
+          <h3>второе число</h3>
+          <input type="number" id="second-number" input="Number" />
+        </div>
+      </div>
+      <input type="button" value="общий делитель" class="btn commonDivisor" />
     </div>
 
     <script src="./js/main.js"></script>
