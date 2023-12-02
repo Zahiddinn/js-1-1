@@ -5,18 +5,12 @@ const btn = document.querySelector(".btn");
 const resultSquare = document.querySelector(".result-square");
 const divider = document.querySelector("#divider");
 const btnDivider = document.querySelector(".btnDivider");
+const checkList = document.querySelector("#check-list");
+const checkInput = document.querySelector("#check-input");
+const checkBtn = document.querySelector("#check-btn");
+const checkedBtn = document.querySelector('#checked-btn');
 
-// squareLength.addEventListener("change", slValue);
-// squareWidth.addEventListener("change", swValue);
 
-// function slValue(e) {
-//   const sL = e.target.value;
-//   console.log(sL);
-// }
-// function swValue(e) {
-//   const sW = e.target.value;
-//   console.log(sW);
-// }
 btn.addEventListener("click", () => {
   const sL = +squareLength.value;
 
@@ -31,7 +25,6 @@ btn.addEventListener("click", () => {
   document.querySelector(".perimeter").textContent = perimeterRes;
 });
 
-// box = document.childElementCount('h3'
 function prime(n) {
   let result = [1, n];
   for (let i = 2; i < Math.pow(n, 0.5); i++) {
@@ -64,13 +57,27 @@ function divisor() {
     }
   }
   let gcd = firstNumber;
- console.log(gcd);
- return gcd;
-
+  console.log(gcd);
+  return gcd;
 }
- const commonDivisor = document.querySelector(".commonDivisor")
+const commonDivisor = document.querySelector(".commonDivisor");
 
- commonDivisor.addEventListener("click", () => {
-  divisor()
-   
- })
+commonDivisor.addEventListener("click", () => {
+  divisor();
+});
+
+const checkListAd = function () {
+  // const text = chekInput.value;
+  checkList.innerHTML = `<li>${checkInput.value} <button id="check-btn">Удалить</button><button id="checked-btn">Сделано</button></li>`;
+  // checkBtn.addEventListener('click', function () {
+
+  // })
+  console.log(checkList);
+  console.log(checkInput);
+};
+
+checkInput.addEventListener("keypress", (event) => {
+  if (event.key == "Enter") {
+    checkListAd();
+  }
+});
